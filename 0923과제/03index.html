@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>03_index</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Gowun+Batang&family=Gowun+Dodum&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/03style.css">
+</head>
+<body>
+    <header class="page-header">
+        <a href="#top" class="brand" aria-label="페이지 처음으로">MYENI</a>
+        <nav class="main-nav" aria-label="주요 메뉴">
+            <a href="#about">ABOUT</a>
+            <a href="#gallery">GALLERY</a>
+        </nav>
+        </header>
+
+    <main id="top">
+        <section class="profile-section" aria-labelledby="profile-title">
+            <!-- 프로필 사진 -->
+             <div class="photo-frame">
+                <img src="img/코쵸우시노부.png" alt="시노부 증명사진">
+                <span class="photo-label">KCHOU SHINOBU</span>
+             </div>
+             <!-- 기본 인적 사항 -->
+             <div class="profile-content">
+                <p class="eyebrow">NICE TO MEET YOU, I'M</p>
+                <h1 id="profile-title">코쵸우 시노부</h1>
+                <p class="role">Fullstack Developer</p>
+                <dl class="profile-details">
+                    <div><dt>AGE</dt><dd>28세</dd></div>
+                    <div><dt>BIRTH</dt><dd>1999.06.12.</dd></div>
+                    <div><dt>MBTI</dt><dd>ENTJ</dd></div>
+                </dl>
+                <div class="profile-actions">
+                    <button class="intro-button" id="introButton" type="button">
+                        <i data-lucide="message-circle" aria-hidden="true"></i>더 알아보기</button>
+                    <div class="social-links" aria-label="SNS 링크">
+                        <a href="https://github.com/" target="_blank" rel="noopener noreferrer" aria-label="GitHub로 이동" title="GitHub"><i data-lucide="link" aria-hidden="true"></i></a>
+                        <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram으로 이동"><i data-lucide="camera" aria-hidden="true"></i></a>
+                        <a href="mailto:dpdms9986@naver.com" aria-label="이메일 링크" title="Email"><i data-lucide="mail" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+             </div>
+        </section>
+        <!-- 소개 영역 -->
+        <section class="about-section" id="about" aria-labelledby="about-title">
+            <div class="section-heading"><p class="eyebrow">ABOUT ME</p><h2 id="about-title" >보이지 않는 견고함부터<br>눈에 보이는 편안함까지 함께 만듭니다.</h2></div>
+            <div class="about-copy">
+        <p>안정적인 데이터 처리와 직관적인 인터페이스 사이의 균형을 중요하게 생각합니다. 새로운 기술을 배우고 직접 코드로 옮기는 과정에 즐거움을 느끼며, 빈틈없는 백엔드 로직 위에 사용하기 편한 웹을 만듭니다.</p>
+        <ul class="keyword-list" aria-label="관심 분야"><li>UI Design</li><li>JavaScript</li><li>SpringBoot</li><li>Python</li></ul>
+        </div>
+        </section>
+        <!-- 갤러리 영역 -->
+        <section class="gallery-section" id="gallery" aria-labelledby="gallery-title">
+         <div class="gallery-header">
+                <div><p class="eyebrow">MY MOMENTS</p><h2 id="gallery-title">Portfolio</h2></div>
+                <div class="gallery-controls">
+                    <button class="gallery-prev" type="button" aria-label="이전 사진" title="이전 사진"><i data-lucide="arrow-left" aria-hidden="true"></i></button>
+                    <button class="gallery-next" type="button" aria-label="다음 사진" title="다음 사진"><i data-lucide="arrow-right" aria-hidden="true"></i></button>
+                </div> 
+                </div>
+                <div class="swiper gallery-swiper">
+                    <div class="swiper-wrapper">
+                        <article class="swiper-slide gallery-card"><img src="img/img1.jpg" alt="감성 부엌"> <p>01 / Kitchen</p></article>
+                        <article class="swiper-slide gallery-card"><img src="img/img2.jpg" alt="프로그래밍하는 사람"> <p>02 / Programing</p></article>
+                        <article class="swiper-slide gallery-card"><img src="img/img3.jpg" alt="꽃 풍경"> <p>03 / Flowers</p></article>
+                        <article class="swiper-slide gallery-card"><img src="img/img4.jpg" alt="공방"> <p>04 / Working</p></article>
+                        <article class="swiper-slide gallery-card"><img src="img/img5.jpg" alt="해질녘 도시"> <p>05 / Nightfall in the City </p></article>
+                        <article class="swiper-slide gallery-card"><img src="img/img6.jpg" alt="공부"> <p>06 / Studing Everyday</p></article>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+         </section>
+    </main>
+    <footer>2026 MYENI ALL RIGHTS RESERVED.</footer>
+
+     <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="http://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="script/03script.js"></script>
+    </body>
+</html>
